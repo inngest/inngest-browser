@@ -1,4 +1,4 @@
-export default (function() {
+const Inngest = (function() {
 
     var CACHE_KEY = "inngest_user";
     var VERSION = "0.1.1";
@@ -172,3 +172,5 @@ export default (function() {
 
     return Inngest;
   })();
+
+module.exports = Inngest;
