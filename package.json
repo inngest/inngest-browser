@@ -1,7 +1,7 @@
 {
   "name": "@inngest/browser",
   "description": "Browser SDK for Inngest",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "inngest.js",
   "scripts": {
     "prepublishOnly": "yarn build",

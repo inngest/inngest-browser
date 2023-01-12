@@ -1,6 +1,6 @@
 (function () {
   var CACHE_KEY = "inngest_user";
-  var VERSION = "0.3.0";
+  var VERSION = "0.3.1";
 
   var defaults = {
     host: "inn.gs",
