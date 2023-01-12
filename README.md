@@ -7,7 +7,7 @@ This is the Inngest SDK to send events from the browser. If you're looking for t
 Add the script via [unpkg](https://unpkg.com/):
 
 ```html
-<script src="//unpkg.com/inngest-sdk@0.3.0/inngest.min.js" />
+<script src="https://unpkg.com/@inngest/browser/inngest.min.js" />
 ```
 
 Initialize your client with an Inngest event key and send your event:

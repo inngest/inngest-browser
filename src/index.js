@@ -75,7 +75,7 @@
       data: assign(data || {}, context()),
       user: user,
     };
-    inngest.event(evt);
+    inngest.send(evt);
   };
 
   inngest.identify = function (externalID, data) {
