@@ -1,21 +1,34 @@
 {
-    "name": "inngest-sdk",
-    "description": "Javascript SDK for the Inngest platform. Read more at https://docs.inngest.com/",
-    "version": "1.0.2",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "main": "src/index.js",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/inngest/javascript-sdk.git"
-    },
-    "keywords": [],
-    "author": "Inngest, Inc.",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/inngest/javascript-sdk/issues"
-    },
-    "homepage": "https://github.com/inngest/javascript-sdk"
+  "name": "@inngest/browser",
+  "description": "Browser SDK for Inngest",
+  "version": "0.3.0",
+  "main": "inngest.js",
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "uglifyjs ./src/index.js -o ./inngest.min.js && cp ./src/index.js ./inngest.js",
+    "release": "yarn run np",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "inngest.js",
+    "inngest.min.js"
+  ],
+  "np": {
+    "yarn": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inngest/javascript-sdk.git"
+  },
+  "keywords": [],
+  "author": "Inngest, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inngest/javascript-sdk/issues"
+  },
+  "homepage": "https://github.com/inngest/javascript-sdk",
+  "devDependencies": {
+    "np": "^7.6.3",
+    "uglify-js": "^3.17.4"
   }
-  
+}

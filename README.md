@@ -1,12 +1,38 @@
-## Welcome to the Inngest javascript SDK!
+## Inngest Browser SDK
 
-For more details, refer to our [developer guide](https://docs.inngest.com/).
+This is the Inngest SDK to send events from the browser. If you're looking for the Inngest JavaScript/TypeScript Node.js SDK check out that repo here: https://github.com/inngest/inngest-js
 
-## Updating the directory 
+## Usage
 
-Make sure to increment the `version` in `package.json`
+Add the script via [unpkg](https://unpkg.com/):
+
+```html
+<script src="//unpkg.com/inngest-sdk@0.3.0/inngest.min.js" />
 ```
-git checkout main 
-git pull 
-npm publish
+
+Initialize your client with an Inngest event key and send your event:
+
+```js
+inngest.init("<replace-with-your-event-key>");
+inngest.send({
+  name: "your.event.name",
+  data: {
+    useful: "information",
+  },
+  user: {
+    // optionally append user data
+    email: "test@example.com",
+  },
+});
+```
+
+That's it - you're now sending events from the browser.
+
+> ⚠️ - **NOTE** - You should add an allow list for your events in the Inngest Cloud dashboard so
+
+## Development
+
+```bash
+yarn build
+yarn np # to publish
 ```
