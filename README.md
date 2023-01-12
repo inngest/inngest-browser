@@ -28,7 +28,7 @@ inngest.send({
 
 That's it - you're now sending events from the browser.
 
-> ⚠️ - **NOTE** - You should add an allow list for your events in the Inngest Cloud dashboard so
+> ⚠️ - **NOTE** - You should add an allow list for your events in the Inngest Cloud dashboard as to prevent anyone from sending event data that doesn't match that list. This is useful to prevent abuse or spam.
 
 ## Development
 
